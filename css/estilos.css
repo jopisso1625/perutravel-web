@@ -1,0 +1,391 @@
+@import url("estilos_body/menu.css");
+@import url("estilos_body/banner.css");
+@import url("estilos_body/footer.css");
+@font-face {
+  font-family: "Pacifico";
+  src: url("../fonts/Pacifico-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: bold;
+  src: url("../fonts/Montserrat-Bold.ttf");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  /*Para titulos*/
+  font-family: "Pacifico", cursive;
+  letter-spacing: 1.1px;
+}
+
+/*Estilos del header*/
+
+.header {
+  top: 0;
+  height: 60px;
+  padding-top: 5px;
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+}
+
+.header .menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  margin-top: -5px;
+  color: #e71414;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.logo img {
+  height: 50px;
+  width: 65px;
+  margin-top: 5px;
+}
+
+.container .fa-bars {
+  display: block;
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  background: #e71414;
+  color: #fff;
+  text-align: center;
+  /*Para que este centrado de manera vertical*/
+  line-height: 40px;
+  border-radius: 5px;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.group__title {
+  text-align: center;
+  font-size: 1.5em;
+  color: #e71414;
+}
+
+.container {
+  margin: auto;
+  width: 95%;
+}
+
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.group--info .container {
+  color: #000;
+  padding: 10px;
+}
+
+.group--info .info__content {
+  width: 90%;
+  text-align: center;
+  margin: auto;
+}
+
+.group--info .info__title {
+  border-bottom: 5px solid #e71414;
+}
+
+.column {
+  width: 100%;
+}
+
+.column .product__img {
+  width: 100%;
+  height: 100%;
+  border-radius: 2px;
+  border: 5px solid #e71414;
+}
+
+.btn {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  width: 200px;
+  background: #e71414;
+  color: #fff;
+  font-size: 1.2em;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px auto;
+  margin-top: 20px;
+}
+
+.new--products {
+  margin-bottom: 20px;
+}
+
+.new--products .div__img {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background-image: url("../image/machu_picchu.jpg");
+  background-size: 100% 100%;
+}
+
+.div__img .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  padding: 20px;
+  width: 60%;
+  border-radius: 60px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.new--products .new__img {
+  width: 100%;
+  height: 300px;
+  background-image: url("../image/nazca.jpg");
+  background-size: 100% 100%;
+  cursor: pointer;
+  transition: all 1s;
+}
+
+.new--products .new__img:hover {
+  background-image: url("../image/trujillo.jpg");
+  background-size: 100% 100%;
+}
+
+.group--banner {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.group--banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner__content {
+  position: absolute;
+  width: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: #fff;
+  font-size: 1.5em;
+}
+
+.banner__content .banner__title {
+  border-bottom: 5px solid #e71414;
+}
+
+.banner__content .banner__txt {
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
+
+.group--articles .container {
+  align-items: flex-start;
+}
+
+.group--articles .column--33 {
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  background: #fff;
+  border: 5px solid #e71414;
+  margin-bottom: 20px;
+  transition: all 0.5s;
+  box-shadow: 5px 5px 10px -2px rgba(0, 0, 0, 0.7);
+  height: 700px;
+}
+
+.group--articles .column--33:hover {
+  box-shadow: 5px 5px 10px -2px rgba(0, 0, 0, 0.7);
+  transform: scale(1.01);
+}
+
+.group--articles .column_title {
+  font-size: 1.6em;
+}
+
+.group--articles .article__img {
+  width: 250px;
+  height: 250px;
+  margin: auto;
+  border-radius: 50%;
+}
+
+.group--articles .btn {
+  box-shadow: 5px 5px 10px -2px rgba(0, 0, 0, 0.7);
+  width: 90%;
+}
+
+/*Nosotros*/
+
+.group--history {
+  width: 70%;
+  margin: auto;
+}
+
+.group--history .group__txt {
+  text-align: left;
+}
+
+/*Contacto*/
+
+.group--contact .column--50 {
+  text-align: left;
+  font-size: 1.2em;
+}
+
+.group--contact .column__title {
+  font-size: 1.5em;
+}
+
+.group--contact .social-icon [class*="icon-"] {
+  color: #fff;
+  background: #e71414;
+  font-size: 1.5em;
+}
+
+.formulario {
+  padding: 10px;
+  padding-top: 0;
+  margin-top: 20px;
+}
+
+.formulario__label,
+.formulario__input-txt,
+.formulario__label-textarea,
+.formulario__textarea {
+  display: block;
+  width: 100%;
+  letter-spacing: 1px;
+}
+
+.formulario__input-txt {
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  margin-bottom: 35px;
+  font-size: 1em;
+}
+
+.formulario__textarea {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  min-height: 100px;
+  max-width: 200px;
+  min-width: 100%;
+  min-width: 100%;
+  font-family: Verdana;
+  font-size: 1em;
+}
+
+.formulario__btn {
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+@media (min-width: 480px) {
+  .new--products .column--50 {
+    width: 50%;
+  }
+  .group--product .column--50 {
+    width: 49%;
+  }
+  .column .product__img {
+    height: 300px;
+    object-fit: cover;
+  }
+  .group--articles .column--33 {
+    width: 49%;
+  }
+  .group--articles .article__img {
+    width: 100%;
+    height: 200px;
+  }
+}
+
+@media (min-width: 768px) {
+  .group--info .info__content {
+    width: 60%;
+  }
+  .column--33 {
+    width: 32%;
+  }
+  .group__title {
+    font-size: 2em;
+  }
+  .new--products .div__img,
+  .new--products .new__img {
+    height: 350px;
+  }
+
+  .group--articles .article__img {
+    width: 270px;
+    height: 270px;
+  }
+  .group--contact .container {
+    align-items: flex-start;
+  }
+  .group--contact .column--50 {
+    width: 49%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container .fa-bars {
+    display: none;
+  }
+
+  .group {
+    margin-bottom: 50px;
+  }
+
+  .group--articles .column--33 {
+    width: 32%;
+  }
+
+  .group--info .info__content {
+    width: 40%;
+  }
+  .group__title {
+    font-size: 2.3em;
+  }
+  .group--product .product__img {
+    height: 350px;
+  }
+}

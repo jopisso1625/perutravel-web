@@ -1,0 +1,91 @@
+/*Estilos footer*/
+
+.footer .container {
+  align-items: flex-start;
+}
+
+.footer {
+  background: #e71414;
+  color: #fff;
+  padding: 10px;
+  padding-bottom: 20px;
+  font-size: 0.8em;
+}
+
+.copy {
+  text-align: center;
+  margin: auto;
+  margin-top: 15px;
+}
+
+.social-icon {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+}
+
+.social-icon [class^="fa"] {
+  color: red;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5em;
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+
+.social-icon a {
+  text-decoration: none;
+}
+
+.social-icon .fa-facebook:hover {
+  background: #0084ff;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.social-icon .fa-instagram:hover {
+  background: linear-gradient(#f58529, #feda77, #dd2a7b, #8134af, #515bd4);
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.social-icon .fa-github:hover {
+  background: #333;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.social-icon .fa-envelope:hover {
+  background: #bd081c;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+@media (min-width: 480px) {
+  .social-icon {
+    width: 60%;
+  }
+}
+
+@media (min-width: 768px) {
+  .social-icon {
+    width: 40%;
+    margin-left: 0px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .social-icon {
+    width: 30%;
+    margin-left: 10%;
+  }
+  .footer .title {
+    font-size: 1.8em;
+  }
+}

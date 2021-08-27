@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perù Travel</title>
+    <link rel="shortcut icon" href="image/Icon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/all.min.css">
+
+
+</head>
+
+<body>
+    <!--Header-->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo"><img src="image/logo.png" alt="">PerúTravel</h1>
+            <i id="btn-menu" class="fas fa-bars"></i>
+            <nav class="nav" id="nav">
+                <ul class="menu">
+                    <li class="item">
+                        <a class="link" href="index.html"> <i class="fas fa-home"></i> Inicio</a>
+                    </li>
+                    <li class="item">
+                        <a class="link" href="servicios.html"> <i class="far fa-gem"></i> Servicios</a>
+                    </li>
+                    <li class="item">
+                        <a class="link" href="nosotros.html"> <i class="fas fa-users"></i> Nosotros</a>
+                    </li>
+                    <li class="item">
+                        <a class="link select" href="contacto.html"> <i class="fas fa-phone"></i> Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="group group--banner">
+            <img src="image/slides_3.jpg" alt="">
+            <div class="banner__content">
+                <h2 class="group__title  banner__title">
+                    PerúTravel
+                </h2>
+                <p class="banner__txt">
+                    contactenos y tendrás una experiencia maravillosa que nunca olvidarás
+                </p>
+            </div>
+        </section>
+        <section class="group group--contact">
+            <h2 class="group__title">Contáctenos</h2>
+            <div class="container flexbox">
+                <div class="contact-information column column--50">
+                    <h5 class="column__title">
+                        Horario de atención
+                    </h5>
+                    <p class="column__txt">
+                        <p> Lunes a Domingo de 6am a 12 pm</p>
+                        <p> Puedes dejarnos un mensaje a nuestra redes sociales</p>
+                    </p>
+                    <p class="column__txt">
+                        <span class="icon-phone"></span> Teléfono: 987-654-321
+                    </p>
+                    <p class="column__txt">
+                        <span class="icon-mobile"></span> Celular: 987-654-321
+                    </p>
+                    <p class="column__txt">
+                        <span class="icon-whatsapp"></span> Whatsapp: 987-654-321
+                    </p>
+                    <p class="column__txt">
+                        <span class="icon-location"></span>Lima - Perú
+                    </p>
+                    <p class="column__txt">
+                        <span class="icon-mail"></span> perutravel@gmail.com
+                    </p>
+                    <br>
+                    <div class="social-icon">
+                        <a href="" class="social-icon__link"><i class="fab fa-facebook"></i></a>
+                        <a href="" class="social-icon__link"><i class="fab fa-instagram"></i></a>
+                        <a href="" class="social-icon__link"><i class="fab fa-github"></i></a>
+                        <a href="" class="social-icon__link"><i class="far fa-envelope"></i></a>
+                    </div>
+                </div>
+                <form action="enviar.php" method="POST" class="formulario column column--50">
+                    <label for="" class="formulario__label">Nombres</label>
+                    <input type="text" class="formulario__input-txt" name="nombre" id="nombres">
+
+                    <label for="" class="formulario__label">Correo</label>
+                    <input type="mail" class="formulario__input-txt" name="correo" id="correo">
+
+                    <label for="" class="formulario__label">Teléfono</label>
+                    <input type="number" class="formulario__input-txt" name="telefono" id="telefono">
+
+                    <label for="" class="formulario__label-textarea">Mensaje:</label>
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="formulario__textarea"></textarea>
+
+                    <input type="submit" class="btn formulario__btn" value="Enviar" name="submit">
+
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container flexbox">
+            <div class="column--33">
+                <h2 class="title">Encuentranos en:</h2>
+                <p >Lima-Perù </p>
+                <p >La página es una modelo de diseño</p>
+            </div>
+            <div class="column--33">
+                <h2 class="title">Contáctanos</h2>
+                <p class=""><i class="fas fa-phone"></i> 987-654-321</p>
+                <p class=""><i class="fab fa-whatsapp"></i> 987-654-321</p>
+            </div>
+            <div class="column--33">
+                <h2 class="title">Síguenos en nuestras redes sociales</h2>
+                <div class="social-icon">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-icon__link"><i class="far fa-envelope"></i></a>
+                </div>
+            </div>
+            <p class="copy">&copy; PeruTravel| Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <script src="js/menu.js"></script>
+</body>
+
+</html>

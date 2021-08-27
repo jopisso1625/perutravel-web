@@ -1,0 +1,64 @@
+/*Estilos banner*/
+
+.banner {
+    text-align: center;
+    width: 65%;
+    color: #fff;
+    font-size: 1.7em;
+    font-weight: bold;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 20px 0px rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 250px;
+}
+
+.banner__txt {
+    display: none;
+}
+
+.banner__img {
+    width: 100%;
+}
+
+
+/*----------Responisive-----------------*/
+
+@media(min-width:480px) {
+    .banner {
+        margin-top: 250px;
+        width: 75%;
+    }
+    .banner__titulo {
+        font-size: 1.3em;
+    }
+    .banner__txt {
+        /*Hace aparecer lo que desaparecimos*/
+        display: block;
+        font-size: 0.9em;
+        margin-top: -10px;
+    }
+}
+
+@media(min-width:768px) {
+    .banner {
+        margin-top: 250px;
+        width: 75%;
+    }
+    .banner__titulo {
+        font-size: 30px;
+    }
+    .banner__txt {
+        font-size: 20px;
+    }
+}
+
+@media(min-width:1024px) {
+    .banner__titulo {
+        font-size: 35px;
+    }
+    .banner__txt {
+        font-size: 25px;
+    }
+}
